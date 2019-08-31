@@ -1,1 +1,1 @@
-web: gunicorn tranquil-bastion-23353.wsgi --log-file -
+web: gunicorn rossisite.wsgi --log-file -
