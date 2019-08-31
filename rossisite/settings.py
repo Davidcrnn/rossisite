@@ -150,7 +150,7 @@ STATICFILES_FINDERS = [
 ]
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'assets')
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 import dj_database_url 
