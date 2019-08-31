@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv('SECRET_KEY_DJANGO')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -149,7 +149,7 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'assets')
-
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
