@@ -127,17 +127,17 @@ USE_L10N = True
 
 USE_TZ = True
 
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+
 
 STATICFILES_DIRS = [
-  os.path.join(PROJECT_ROOT, 'assets/')
+  os.path.join(BASE_DIR, 'assets/')
 ]
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media_cdn')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 MEDIA_URL = '/media_cdn/'
 
 
@@ -148,7 +148,7 @@ STATICFILES_FINDERS = [
     'compressor.finders.CompressorFinder',
     'sass_processor.finders.CssFinder',
 ]
-SASS_PROCESSOR_ROOT = os.path.join(PROJECT_ROOT,'assets')
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'assets')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
