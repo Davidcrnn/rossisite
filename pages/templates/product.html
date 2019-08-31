@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <div class="container">
+        <h1>Product Index</h1>
+        <ul>
+            {% for product in object_list %}
+            <li>{{ product.name }}</li>
+            <li>{{ product.description }}</li>
+            <li> <a href="{% url 'product-detail' product.id %}"></a>Link</li>
+        </ul>
+        {% endfor %}
+    </div>
+{% endblock content%}
