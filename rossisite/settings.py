@@ -12,12 +12,14 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-# settings.py
-from dotenv import load_dotenv
-load_dotenv()
+import environ
 
-# OR, the same with increased verbosity
-load_dotenv(verbose=True)
+env = environ.Env(
+    DEBUG=(bool,False)
+
+)
+
+environ.Env.read_env()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY_DJANGO')
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,8 +89,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'derossidb',
-        'USER': os.getenv('USER_DB'),
-        'PASSWORD': os.getenv('PASSWORD_DB'),
+        'USER': env('USER_DB'),
+        'PASSWORD': env('PASSWORD_DB'),
         'HOST': 'localhost',
         'PORT': '5433',
     }
