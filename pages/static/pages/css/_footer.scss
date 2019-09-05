@@ -1,0 +1,24 @@
+.footer-container {
+    height: 200px;
+}
+
+
+.footer-nav-link {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+        color: white;
+        padding: 0px 40px;
+    } ul > li {
+        display: inline; 
+        text-align: center;
+        
+    }
+}
+
+.footer-copyright p {
+    text-align:  center;
+}

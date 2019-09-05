@@ -1,0 +1,23 @@
+.nav-container {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    h6 {
+        margin-left: 30px;
+    }
+}
+
+.nav-link-container ul > li {
+    display: inline;
+    text-align: center;
+    padding: 0 15px;
+}
+.nav-link-container li > a {
+    color: black; 
+    &:hover {
+        text-decoration: none;
+        opacity: 0.2;
+    }
+}

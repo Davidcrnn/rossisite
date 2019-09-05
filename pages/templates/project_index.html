@@ -2,13 +2,15 @@
 
 {% block content%}
 <div class="container">
-        <h1>Projects</h1>
+    <div class="header-project-index">
+        <h4>Sujets d'étude</h4>
+    </div>
         
     <div class="row">
             {% for project in object_list %}
-        <div class="col-xs-12 col-sm-6">
-            <h6>{{ project.name }}</h6>
-            <p><a href="{% url 'project-detail' project.id %}"> Link</a></p>
+        <div class="col-xs-12 col-sm-6 card-project-index">
+            <img src="{{ project.image.url }}" alt="" height="250px">
+            <p><a href="{% url 'project-detail' project.id %}"> {{ project.name }}</a></p>
         </div>
         {% endfor %}   
     </div>

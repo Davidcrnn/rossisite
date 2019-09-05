@@ -2,13 +2,16 @@
 
 {% block content %}
     <div class="container">
-        <h1>Product Index</h1>
-        <ul>
+        <div class="header-index">
+            <h1>Tous les produits</h1>
+        </div>
+        <div class="row">
             {% for product in object_list %}
-            <li>{{ product.name }}</li>
-            <li>{{ product.description }}</li>
-            <li> <a href="{% url 'product-detail' product.id %}"></a>Link</li>
-        </ul>
-        {% endfor %}
+            <div class="col-xs-12 col-md-4 carte">
+                <img src="{{ product.image.url }}" alt="" height="250px">
+                <a href="{% url 'product-detail' product.id %}">{{ product.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock content%}

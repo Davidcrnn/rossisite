@@ -1,0 +1,73 @@
+.banner-container {
+  height: 70vh;
+  margin: 30px 0;
+  background: url("../images/banner1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.carte {
+  padding: 20px;
+  border: 1px solid red; }
+
+.nav-container {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px; }
+  .nav-container h6 {
+    margin-left: 30px; }
+
+.nav-link-container ul > li {
+  display: inline;
+  text-align: center;
+  padding: 0 15px; }
+
+.nav-link-container li > a {
+  color: black; }
+  .nav-link-container li > a:hover {
+    text-decoration: none;
+    opacity: 0.2; }
+
+.footer-container {
+  height: 200px; }
+
+.footer-nav-link {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .footer-nav-link a {
+    color: white;
+    padding: 0px 40px; }
+  .footer-nav-link ul > li {
+    display: inline;
+    text-align: center; }
+
+.footer-copyright p {
+  text-align: center; }
+
+.header-project-index {
+  margin: 50px 0; }
+
+.card-project-index a {
+  color: black;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'Futura';
+  src: local("FuturaPTMedium"), url("../fonts/FuturaPTMedium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Futuralight';
+  src: local("FuturaPTLight"), url("../fonts/FuturaPTLight.otf") format("opentype"); }
+
+body {
+  font-family: 'Futura';
+  background-color: #c5c5c50f; }
+
+/*# sourceMappingURL=style.css.map */

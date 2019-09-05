@@ -5,6 +5,16 @@ from django.views.generic.detail import DetailView
 from .models import Product, Project
 # Create your views here.
 
+class HomePageView(TemplateView):
+    template_name= 'home.html'
+    model = Product
+
+    def get(self, request):
+         series = Product.objects.all()
+         stu = {"product_name": series}
+         return render(request, 'home.html', stu)
+
+
 class ProjectListView(ListView):
     model = Project
     template_name = "project_index.html"

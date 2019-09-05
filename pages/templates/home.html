@@ -1,11 +1,31 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 {% block content %}
 
 <div class="container">
-        <h1>Home page</h1>
-    <h1 class="test">Test</h1>
+    <div class="banner-container">
+        <div class="banner-text">
+            <h3>Victor de Rossi</h3>
+            <p>Artiste - Mobilier d'Art</p>
+    
+        </div>
+    </div>
+
+    <div class="product-list-container">
+        <div class="header-text">
+            <h4 class="text-center">Découvrir les oeuvres</h4>
+        </div>
+        <div class="row">
+            {% for product in product_name %}
+            <div class="col-xs-12 col-md-4 carte">
+                <img src="{{ product.image.url }}" alt="" height="250px" >
+                <h6>{{ product.name}}</h6> 
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
+
 
 
 {% endblock content%}
