@@ -4,3 +4,4 @@ from . import models
 
 admin.site.register(models.Product)
 admin.site.register(models.Project)
+admin.site.register(models.UploadImages)

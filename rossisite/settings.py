@@ -146,7 +146,7 @@ prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
 cloudinary.config(
-    cloud_name = 'dchirix0p',
-    api_key = '439314343513393',
-    api_secret = 'UUYtrb2snAsA4YitVDK7a-Stm6M'
+    cloud_name = os.environ.get('CLOUD_NAME'),
+    api_key = os.environ.get('API_KEY_CLOUD'),
+    api_secret = os.environ.get('API_SECRET_CLOUD'),
 )
