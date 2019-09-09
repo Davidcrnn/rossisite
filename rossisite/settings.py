@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import cloudinary 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '65=3l3rfmjpam(fes(7^5f0uclxb&$dwxj_3=8pb$q$j4h6r6('
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sass_processor',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'derossidb',
-        'USER': 'victor',
-        'PASSWORD': 'Anaconda11',
+        'USER': os.environ.get('USER_DB'),
+        'PASSWORD': os.environ.get('PASSWORD_DB'),
         'HOST': 'localhost',
         'PORT': '5433',
     }
@@ -143,3 +144,9 @@ MEDIA_URL = '/media_cdn/'
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
+
+cloudinary.config(
+    cloud_name = 'dchirix0p',
+    api_key = '439314343513393',
+    api_secret = 'UUYtrb2snAsA4YitVDK7a-Stm6M'
+)
