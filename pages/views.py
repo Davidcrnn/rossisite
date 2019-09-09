@@ -5,6 +5,7 @@ from django.views.generic.detail import DetailView
 from .models import Product, Project
 # Create your views here.
 
+
 class HomePageView(TemplateView):
     template_name= 'home.html'
     model = Product
@@ -40,3 +41,4 @@ class ProductDetailView(DetailView):
     def get_object(self):
         id_= self.kwargs.get("id")
         return get_object_or_404(Product, id=id_)
+
