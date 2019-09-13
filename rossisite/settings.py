@@ -9,9 +9,12 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
+from dotenv import load_dotenv
+load_dotenv()
 
 import os
-import cloudinary 
+
+# import cloudinary 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,8 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'derossidb',
-        'USER': os.environ.get('USER_DB'),
-        'PASSWORD': os.environ.get('PASSWORD_DB'),
+        'USER': os.getenv('USER_DB'),
+        'PASSWORD': os.getenv('PASSWORD_DB'),
         'HOST': 'localhost',
         'PORT': '5433',
     }
@@ -145,8 +148,8 @@ import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
-cloudinary.config(
-    cloud_name = os.environ.get('CLOUD_NAME'),
-    api_key = os.environ.get('API_KEY_CLOUD'),
-    api_secret = os.environ.get('API_SECRET_CLOUD'),
-)
+# cloudinary.config(
+#     cloud_name = os.environ.get('CLOUD_NAME'),
+#     api_key = os.environ.get('API_KEY_CLOUD'),
+#     api_secret = os.environ.get('API_SECRET_CLOUD'),
+# )
