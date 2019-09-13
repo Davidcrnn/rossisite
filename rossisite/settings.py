@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-
+import django_heroku
 # import cloudinary 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -142,7 +142,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 MEDIA_URL = '/media_cdn/'
 
-
+django_heroku.settings(locals())
 
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
