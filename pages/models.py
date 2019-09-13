@@ -16,15 +16,11 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name= 'products')
-    image = models.FileField(upload_to='images/', default=False)
     date_creation = models.DateTimeField(auto_now_add=False, blank=True)
+    image = models.FileField(upload_to='images/', default=False)
+    image2 = models.FileField(upload_to='images/', default=False)
+    image3 = models.FileField(upload_to='images/', default=False)
 
     def __str__(self):
         return self.name
 
-# class UploadImages(models.Model):
-#     # product  = models.ForeignKey(Product, on_delete=models.CASCADE)
-#     image = models.ImageField(upload_to='images/', blank=True, null=True)
-
-#     def __str__(self):
-#         return str(image)

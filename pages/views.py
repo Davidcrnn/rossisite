@@ -42,3 +42,4 @@ class ProductDetailView(DetailView):
         id_= self.kwargs.get("id")
         return get_object_or_404(Product, id=id_)
 
+

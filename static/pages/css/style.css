@@ -13,11 +13,13 @@
   border: 1px solid red; }
 
 .nav-container {
-  background-color: gray;
+  background: url("../images/nav.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px; }
+  min-height: 70px; }
   .nav-container h6 {
     margin-left: 30px; }
 
@@ -26,8 +28,11 @@
   text-align: center;
   padding: 0 15px; }
 
+.nav-link-container ul {
+  margin: 0; }
+
 .nav-link-container li > a {
-  color: black; }
+  color: white; }
   .nav-link-container li > a:hover {
     text-decoration: none;
     opacity: 0.2; }

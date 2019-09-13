@@ -13,6 +13,7 @@ urlpatterns = [
     path("projects/<int:id>/", ProjectDetailView.as_view(), name='project-detail'),
     path('products/', ProductListView.as_view(), name = 'products'),
     path('products/<int:id>', ProductDetailView.as_view(), name='product-detail'),
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
