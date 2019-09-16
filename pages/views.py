@@ -50,3 +50,5 @@ class ProductDetailView(DetailView):
 
 
 
+class ContactView(TemplateView):
+    template_name= 'contact.html'

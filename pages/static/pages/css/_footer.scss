@@ -2,11 +2,13 @@
 
 
 .footer-nav-link {
-    height: 100px;
-    background: linear-gradient(90deg, rgba(66,66,66,1) 0%, rgba(38,38,38,1) 40%, rgba(0,4,5,1) 96%);
+    height: 170px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: url('../images/footer.svg');
+    background-size: cover;
+    background-position: center;
     a {
         color: white;
         padding: 0px 40px;
@@ -23,12 +25,7 @@
     text-align:  center;
 }
 
-.bg-footer {
-    background: url('../images/footer.svg');
-    background-size: cover;
-    background-position: center;
-    height: 30px;
-}
+
 
 @media screen and (max-width: 650px) {
     .footer-nav-link a {

@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1366 100" style="enable-background:new 0 0 1366 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#020202;stroke:#000000;stroke-miterlimit:10;}
-</style>
-<polygon class="st0" points="-0.5,0.5 527.5,50.5 801.5,25.5 1181.5,50.5 1365.5,0.5 "/>
-<path class="st0" d="M636.5-164.5"/>
-</svg>
+<svg enable-background="new 0 0 1366 160" viewBox="0 0 1366 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="0" x2="1366" y1="66" y2="66"><stop offset=".002604167" stop-color="#252525"/><stop offset="1"/></linearGradient><path d="m0 0v111l284.5 21 154.5-22.5 189.5 14 474.9-16 262.6 17.4v-124.9z" fill="url(#a)"/></svg>

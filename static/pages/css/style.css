@@ -56,9 +56,9 @@
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
-  padding: 0px 40px; }
+  padding: 0px 30px; }
   .nav-container h6 {
-    margin-left: 30px; }
+    margin-left: 20px; }
 
 .nav-link-container ul > li {
   display: inline;
@@ -83,7 +83,7 @@
 .button_container {
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: 60px;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -174,7 +174,7 @@
         color: #FFF;
         text-decoration: none;
         overflow: hidden;
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Futura'; }
         .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
           width: 100%; }
@@ -203,14 +203,18 @@
     background-size: cover;
     background-position: center; }
   .card {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .button_container {
+    right: 40px; } }
 
 .footer-nav-link {
-  height: 100px;
-  background: linear-gradient(90deg, #424242 0%, #262626 40%, #000405 96%);
+  height: 170px;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background: url("../images/footer.svg");
+  background-size: cover;
+  background-position: center; }
   .footer-nav-link a {
     color: white;
     padding: 0px 40px; }
@@ -223,12 +227,6 @@
 .footer-copyright p {
   text-align: center; }
 
-.bg-footer {
-  background: url("../images/footer.svg");
-  background-size: cover;
-  background-position: center;
-  height: 30px; }
-
 @media screen and (max-width: 650px) {
   .footer-nav-link a {
     padding: 0 20px; } }
@@ -238,8 +236,7 @@
   .header-project-index h4 {
     margin-bottom: 50px;
     font-size: 30px;
-    font-family: Futura;
-    padding: 0 30px; }
+    font-family: Futura; }
 
 .card-project-index a {
   color: black;
@@ -296,6 +293,8 @@
   margin: 0; }
   .text-description-product a {
     margin: 0; }
+  .text-description-product p {
+    font-size: 16px; }
 
 .btn {
   position: relative;
@@ -414,6 +413,12 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none; }
+
+#slider img {
+  height: 500px; }
+
+#carousel img {
+  height: 100px; }
 
 .flex-viewport {
   max-height: 2000px;
@@ -568,6 +573,51 @@ div#carousel.flexslider {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px; } }
+
+@media screen and (max-width: 650px) {
+  #slider img {
+    height: 350px; } }
+
+.photo-contact {
+  background: url("../images/contact.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px; }
+
+.contact-container {
+  margin: 50px 0;
+  min-height: 700px; }
+
+.carte-contact {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contact-info {
+  padding: 100px;
+  background: linear-gradient(90deg, #424242 0%, #262626 40%, #000405 96%);
+  color: white; }
+  .contact-info p {
+    font-size: 18px; }
+  .contact-info p > a {
+    color: white;
+    text-decoration: none; }
+  .contact-info a:hover {
+    text-decoration: underline; }
+
+@media screen and (max-width: 650px) {
+  .photo-contact {
+    height: 300px; }
+  .carte-contact {
+    height: 300px; } }
+
+.navigation {
+  margin: 20px 0; }
+  .navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px; }
 
 body {
   font-family: 'FuturaLight';

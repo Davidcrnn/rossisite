@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic.detail import DetailView
-from .views import ProjectListView, ProjectDetailView, ProductListView, ProductDetailView, HomePageView
+from .views import ProjectListView, ProjectDetailView, ProductListView, ProductDetailView, HomePageView, ContactView
 
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
@@ -13,7 +13,7 @@ urlpatterns = [
     path("projects/<int:id>/", ProjectDetailView.as_view(), name='project-detail'),
     path('products/', ProductListView.as_view(), name = 'products'),
     path('products/<int:id>', ProductDetailView.as_view(), name='product-detail'),
-
+    path('contact/', ContactView.as_view(), name='contact'),
 
 ]
 
