@@ -22,7 +22,21 @@
   justify-content: center;
   margin: 50px 0; }
   .header-text h4 {
+    color: white;
+    font-size: 28px; }
+
+.banner-text {
+  background: #00000052;
+  padding: 40px;
+  text-align: center; }
+  .banner-text h3, .banner-text p {
     color: white; }
+
+.card-text p {
+  color: #000000ab;
+  text-decoration: none;
+  font-family: Futura;
+  font-size: 16px; }
 
 .nav-container {
   background: url("../images/nav.svg") no-repeat;
@@ -31,7 +45,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px; }
+  min-height: 70px;
+  padding: 0px 40px; }
   .nav-container h6 {
     margin-left: 30px; }
 
@@ -51,10 +66,130 @@
 
 .nav-logo-container h6 > a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: Futura;
+  font-size: 30px; }
 
-.footer-container {
-  height: 200px; }
+.button_container {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease; }
+  .button_container:hover {
+    opacity: .7; }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF; }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #FFF; }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF; }
+  .button_container span {
+    background: white;
+    border: none;
+    height: 3px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+    border-radius: 3px; }
+    .button_container span:nth-of-type(2) {
+      top: 11px; }
+    .button_container span:nth-of-type(3) {
+      top: 22px; }
+
+.overlay {
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 80; }
+  .overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%; }
+    .overlay.open li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s; }
+      .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s; }
+      .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s; }
+      .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s; }
+  .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Varela Round', serif;
+    font-weight: 400;
+    text-align: center; }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .overlay ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #FFF;
+        text-decoration: none;
+        overflow: hidden;
+        font-size: 50px;
+        font-family: 'Futura'; }
+        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+          width: 100%; }
+        .overlay ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #FFF;
+          transition: .35s; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+@media screen and (max-width: 650Px) {
+  .nav-container {
+    background: url("../images/nav-min.svg") no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .card {
+    padding: 0 30px; } }
 
 .footer-nav-link {
   height: 100px;
@@ -68,6 +203,8 @@
   .footer-nav-link ul > li {
     display: inline;
     text-align: center; }
+  .footer-nav-link ul {
+    padding: 0; }
 
 .footer-copyright p {
   text-align: center; }
@@ -76,12 +213,19 @@
   background: url("../images/footer.svg");
   background-size: cover;
   background-position: center;
-  height: 50px; }
+  height: 30px; }
+
+@media screen and (max-width: 650px) {
+  .footer-nav-link a {
+    padding: 0 20px; } }
 
 .header-project-index {
   margin: 50px 0; }
   .header-project-index h4 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Futura;
+    padding: 0 30px; }
 
 .card-project-index a {
   color: black;
@@ -133,6 +277,9 @@
 
 .product-container {
   margin: 50px; }
+
+.flexslider {
+  margin-top: 20px; }
 
 body {
   font-family: 'FuturaLight';
