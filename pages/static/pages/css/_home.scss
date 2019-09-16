@@ -1,7 +1,7 @@
 .banner-container {
     height: 70vh;
     margin: 30px 0;
-    background: url('../images/banner1.png');
+    background: url('../images/banner5.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -35,6 +35,9 @@
     text-align: center;
     h3, p {
         color: white;
+        font-size: 25px;
+    } h3 {
+        font-size: 43px;
     }
 }
 
@@ -43,4 +46,11 @@
     text-decoration: none;
     font-family: Futura;
     font-size: 16px;
+}
+@media screen and (max-width: 650px) {
+   .header-text {
+    background-image: url('../images/banner-decouvrir-min.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
+   }
 }

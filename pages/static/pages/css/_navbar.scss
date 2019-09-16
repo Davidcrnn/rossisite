@@ -1,6 +1,7 @@
 .nav-container {
     
     background: url('../images/nav.svg') no-repeat;
+    background: linear-gradient(90deg, rgba(66,66,66,1) 0%, rgba(38,38,38,1) 40%, rgba(0,4,5,1) 96%);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -81,7 +82,7 @@ $button-width: 35px;
   }
   
   span {
-  background: white;
+  background: #d0d0d0;
   border: none;
   height: 3px;
   width: 42px;
@@ -94,10 +95,15 @@ $button-width: 35px;
     
     &:nth-of-type(2) {
       top: 11px;
+      width: 75%;
     }
     
     &:nth-of-type(3) {
       top: 22px;
+      width: 94%;
+    }
+    .top {
+      width: 96%;
     }
   }
 }
@@ -203,7 +209,7 @@ $button-width: 35px;
   }
 }
 
-@media screen and (max-width: 650Px) {
+@media screen and (max-width: 650px) {
     .nav-container{
         background: url('../images/nav-min.svg') no-repeat;
         background-size: cover;
