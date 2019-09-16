@@ -202,10 +202,16 @@
     background: url("../images/nav-min.svg") no-repeat;
     background-size: cover;
     background-position: center; }
+  .nav-logo-container h6 > a {
+    font-size: 24px; }
   .card {
     padding: 0 30px; }
+  .banner-container {
+    height: 55vh; }
   .button_container {
-    right: 40px; } }
+    right: 40px; }
+  .card-image {
+    height: 275px; } }
 
 .footer-nav-link {
   height: 170px;
@@ -229,7 +235,9 @@
 
 @media screen and (max-width: 650px) {
   .footer-nav-link a {
-    padding: 0 20px; } }
+    padding: 0 15px; }
+  .contact-info {
+    padding: 58px; } }
 
 .header-project-index {
   margin: 50px 0; }

@@ -215,13 +215,21 @@ $button-width: 35px;
         background-size: cover;
     background-position: center;
     }
-
+    .nav-logo-container h6 > a {
+      font-size: 24px;
+    }
 
     .card {
         padding: 0 30px;
     }
-
+    .banner-container {
+      height: 55vh;
+    }
     .button_container {
       right: 40px;
+    }
+
+    .card-image {
+      height: 275px;
     }
 }

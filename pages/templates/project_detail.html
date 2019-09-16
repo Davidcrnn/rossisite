@@ -9,7 +9,7 @@
             
         <div class="row">
                 {% for product in project.get_products %}
-            <div class="col-xs-12 col-sm-4 card-project-index" >
+            <div class="col-xs-12 col-md-4 card-project-index" >
                     <a href="{% url 'product-detail' product.id %}">
                 <div class="card">
                     <div class="card-image" style="background-image: url('{{ project.image.url }}');">
