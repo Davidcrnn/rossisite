@@ -1,9 +1,27 @@
 .header-project-index {
     margin: 50px 0;
+    h4 {
+        margin-bottom: 50px;
+    }
 }
 
 .card-project-index a {
     color: black;
     text-decoration: none;
+    margin-top: 20px;
 }
 
+.card {
+    border: none;
+    background: transparent;
+}
+.card-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.card-text p {
+    margin-top: 20px;
+}

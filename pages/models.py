@@ -20,6 +20,7 @@ class Product(models.Model):
     image = models.FileField(upload_to='images/', default=False)
     image2 = models.FileField(upload_to='images/', default=False)
     image3 = models.FileField(upload_to='images/', default=False)
+    visible_home = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

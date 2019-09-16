@@ -13,3 +13,17 @@
     padding: 20px;
     border: 1px solid red;
 }
+
+.header-text {
+    height: 70px;
+    background-image: url('../images/banner-decouvrir.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    h4 {
+        color: white;
+    }
+}

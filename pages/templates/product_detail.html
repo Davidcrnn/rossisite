@@ -1,13 +1,34 @@
 {% extends 'base.html' %}
-
+{% load static%}
 {% block content%}
 <div class="container">
-    <h1>{{ product.name}}</h1>
-    <img src="{{ product.image.url }}" alt="" width="300px">
-    <img src="{{ product.image3.url }}" alt="" width="300px">
-    <img src="{{ product.image2.url }}" alt="" width="300px">
-    <p>{{ product.project.name}}</p>
+    <div class="product-container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                    <div id="slider" class="flexslider">
+                            <ul class="slides slides-container">
+                              <li><img src="{{ product.image.url }}" alt="" width="100%" height="400px"></li>
+                              <li><img src="{{ product.image3.url }}" alt="" width="100%" height="400px"></li>     
+                              <li><img src="{{ product.image2.url }}" alt="" width="100%" height="400px"></li>
+                            </ul>
+                          </div>
+                          <div id="carousel" class="flexslider">
+                                <ul class="slides">
+                                  <li><img src="{{ product.image.url }}" alt="" width="100%" height="100px"></li>
+                                  <li><img src="{{ product.image3.url }}" alt="" width="100%" height="100px"></li>     
+                                  <li><img src="{{ product.image2.url }}" alt="" width="100%" height="100px"></li>
+                                </ul>
+                              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h1>{{ product.name}}</h1>
+                <p> {{ product.description}}</p>
+            </div>
+        </div>
+
+    </div>
 
 </div>
 
 {% endblock content%}
+
