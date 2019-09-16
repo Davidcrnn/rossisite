@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 650px) {
   .header-text {
-    background-image: url("../images/banner-decouvrir-min.svg") no-repeat;
+    background-image: url("../images/banner-decouvrir-min.svg");
     background-size: cover;
     background-position: center; } }
 
