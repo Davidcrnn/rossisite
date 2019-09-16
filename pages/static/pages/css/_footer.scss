@@ -1,6 +1,4 @@
-.footer-container {
-    height: 200px;
-}
+
 
 
 .footer-nav-link {
@@ -16,6 +14,8 @@
         display: inline; 
         text-align: center;
         
+    } ul {
+        padding: 0;
     }
 }
 
@@ -27,5 +27,11 @@
     background: url('../images/footer.svg');
     background-size: cover;
     background-position: center;
-    height: 50px;
+    height: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .footer-nav-link a {
+        padding: 0 20px;
+    }
 }
