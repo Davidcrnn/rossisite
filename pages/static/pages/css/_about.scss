@@ -1,0 +1,27 @@
+.resume-container{
+    min-height: 700px;
+    margin: 50px 0;
+    h1 {
+        margin-bottom: 100px;
+    }
+}
+
+.resume-fr {
+    margin-bottom: 100px;
+    h6 {
+        font-size: 25Px;
+        margin-bottom: 20px;
+    } p {
+        color: $gray;
+    }
+}
+
+.resume-en {
+    margin-bottom: 100px;
+    h6 {
+        font-size: 25Px;
+        margin-bottom: 20px;
+    } p {
+        color: $gray;
+    }
+}

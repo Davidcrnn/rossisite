@@ -1,11 +1,23 @@
+@import 'color';
 @import 'home';
 @import 'navbar';
 @import 'footer';
 @import 'project_index';
 @import 'fonts';
+@import 'about';
+@import 'productdetail';
 
 
 body {
-    font-family: 'Futura';
+    font-family: 'FuturaLight';
     background-color: #c5c5c50f;
 }
+
+hr.separation {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+    margin: 50px 0;
+  }
+
+

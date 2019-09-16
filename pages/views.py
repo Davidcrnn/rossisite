@@ -1,10 +1,15 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic   import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Product, Project
+
 # Create your views here.
 
+# uniquement pour mail
+from django.core.mail import send_mail, BadHeaderError
+from django.conf import settings
 
 class HomePageView(TemplateView):
     template_name= 'home.html'
@@ -12,6 +17,7 @@ class HomePageView(TemplateView):
 
     def get(self, request):
          series = Product.objects.all()
+         visible = series.filter(visible_home=True)
          stu = {"product_name": series}
          return render(request, 'home.html', stu)
 
@@ -41,5 +47,6 @@ class ProductDetailView(DetailView):
     def get_object(self):
         id_= self.kwargs.get("id")
         return get_object_or_404(Product, id=id_)
+
 
 
