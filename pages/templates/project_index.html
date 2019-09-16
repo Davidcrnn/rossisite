@@ -11,7 +11,7 @@
         
     <div class="row">
             {% for project in object_list %}
-        <div class="col-xs-12 col-sm-4 card-project-index" >
+        <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" >
                 <a href="{% url 'project-detail' project.id %}">
             <div class="card">
                 <div class="card-image" style="background-image: url('{{ project.image.url }}');">

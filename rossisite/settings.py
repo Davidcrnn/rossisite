@@ -148,11 +148,7 @@ import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
-# cloudinary.config(
-#     cloud_name = os.environ.get('CLOUD_NAME'),
-#     api_key = os.environ.get('API_KEY_CLOUD'),
-#     api_secret = os.environ.get('API_SECRET_CLOUD'),
-# )
+
 
 
 # EMAIL
