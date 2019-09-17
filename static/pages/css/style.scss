@@ -1,12 +1,29 @@
+@import 'color';
 @import 'home';
 @import 'navbar';
 @import 'footer';
 @import 'project_index';
 @import 'fonts';
 @import 'about';
-
+@import 'productdetail';
+@import 'slider';
+@import 'contact';
+@import 'product';
 
 body {
-    font-family: 'Futura';
+    font-family: 'FuturaLight';
     background-color: #c5c5c50f;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23fdfdfc' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23fbfbfa' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23f9f9f7' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23f8f6f5' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23f6f4f2' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23f4f2f0' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23f2f0ed' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
+
+hr.separation {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+    margin: 50px 0;
+  }
+
+

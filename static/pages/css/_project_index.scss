@@ -1,12 +1,29 @@
 .header-project-index {
     margin: 50px 0;
+    h4 {
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: Futura;
+    }
 }
 
 .card-project-index a {
-    color: red;
+    color: black;
     text-decoration: none;
+    margin-top: 20px;
 }
 
-.card-project-index {
-    height: 650px;
+.card {
+    border: none;
+    background: transparent;
+}
+.card-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.card-text p {
+    margin-top: 20px;
 }

@@ -1,14 +1,14 @@
-.footer-container {
-    height: 200px;
-}
+
 
 
 .footer-nav-link {
-    height: 100px;
-    background-color: black;
+    height: 170px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: url('../images/footer.svg');
+    background-size: cover;
+    background-position: center;
     a {
         color: white;
         padding: 0px 40px;
@@ -16,9 +16,23 @@
         display: inline; 
         text-align: center;
         
+    } ul {
+        padding: 0;
     }
 }
 
 .footer-copyright p {
     text-align:  center;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .footer-nav-link a {
+        padding: 0 15px;
+    }
+
+    .contact-info {
+        padding: 58px;
+    }
 }
