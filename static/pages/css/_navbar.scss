@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70px;
     padding: 0px 30px;
+    height: 70px;
     h6 {
         margin-left: 20px;
     }
@@ -37,6 +37,7 @@
     text-decoration: none;
     font-family: Futura;
     font-size: 30px;
+   
 }
 
 // test
@@ -214,6 +215,7 @@ $button-width: 35px;
         background: url('../images/nav-min.svg') no-repeat;
         background-size: cover;
     background-position: center;
+    height: 55px;
     }
     .nav-logo-container h6 > a {
       font-size: 24px;
@@ -227,6 +229,7 @@ $button-width: 35px;
     }
     .button_container {
       right: 40px;
+      top: 20px;
     }
 
     .card-image {

@@ -1,5 +1,5 @@
 .photo-contact {
-    background: url('../images/contact.jpg') no-repeat;
+    background: url('../images/contactus.jpg') no-repeat;
     background-position: center;
     background-size: cover; 
     height: 600px;
@@ -7,6 +7,9 @@
 .contact-container {
     margin: 50px 0;
     min-height: 700px; 
+    h1 {
+        margin-bottom: 50px;
+    }
 }
 
 .carte-contact {
@@ -41,5 +44,9 @@
 
     .carte-contact {
         height: 300px;
+    }
+
+    .contact-info {
+        padding: 60px;
     }
 }
