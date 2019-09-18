@@ -1,7 +1,8 @@
-
+{% load static %}
 <div class="nav-container">
   <div class="nav-logo-container">
-    <h6><a href="{% url 'home' %}">VICTOR DE ROSSI</a></h6>
+    <h6 class="hidden-xs hidden-sm"><a href="{% url 'home' %}">VICTOR DE ROSSI</a></h6>
+    <a href="#" class="hidden-md hidden-lg"><img src="{% static 'pages/images/vdr-logo.svg'%}" alt="" width="100px" height="35px"></a>
   </div>
 
   <div class="nav-link-container">
@@ -28,7 +29,7 @@
                 <a href="{% url 'projects' %}">Series</a>
               </li>
               <li class="">
-                <a href="{% url 'products' %}">All products
+                <a href="{% url 'products' %}">Works
                 </a>
               </li>
               <li class="">

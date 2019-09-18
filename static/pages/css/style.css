@@ -45,7 +45,9 @@
   .header-text {
     background-image: url("../images/banner-decouvrir-min.svg");
     background-size: cover;
-    background-position: center; } }
+    background-position: center; }
+    .header-text h4 {
+      font-size: 24px; } }
 
 .nav-container {
   background: url("../images/nav.svg") no-repeat;
@@ -55,8 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
-  padding: 0px 30px; }
+  padding: 0px 30px;
+  height: 70px; }
   .nav-container h6 {
     margin-left: 20px; }
 
@@ -201,7 +203,8 @@
   .nav-container {
     background: url("../images/nav-min.svg") no-repeat;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    height: 55px; }
   .nav-logo-container h6 > a {
     font-size: 24px; }
   .card {
@@ -209,7 +212,8 @@
   .banner-container {
     height: 55vh; }
   .button_container {
-    right: 40px; }
+    right: 40px;
+    top: 20px; }
   .card-image {
     height: 275px; } }
 
@@ -241,7 +245,7 @@
 
 .header-project-index {
   margin: 50px 0; }
-  .header-project-index h4 {
+  .header-project-index h1 {
     margin-bottom: 50px;
     font-size: 30px;
     font-family: Futura; }
@@ -259,7 +263,8 @@
   height: 350px;
   background-size: cover;
   background-position: center;
-  border: none; }
+  border: none;
+  border-radius: 4px; }
 
 .card-text p {
   margin-top: 20px; }
@@ -587,7 +592,7 @@ div#carousel.flexslider {
     height: 350px; } }
 
 .photo-contact {
-  background: url("../images/contact.jpg") no-repeat;
+  background: url("../images/contactus.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   height: 600px; }
@@ -595,6 +600,8 @@ div#carousel.flexslider {
 .contact-container {
   margin: 50px 0;
   min-height: 700px; }
+  .contact-container h1 {
+    margin-bottom: 50px; }
 
 .carte-contact {
   height: 600px;
@@ -618,7 +625,9 @@ div#carousel.flexslider {
   .photo-contact {
     height: 300px; }
   .carte-contact {
-    height: 300px; } }
+    height: 300px; }
+  .contact-info {
+    padding: 60px; } }
 
 .navigation {
   margin: 20px 0; }
