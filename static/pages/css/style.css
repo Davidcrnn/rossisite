@@ -1,7 +1,7 @@
 .banner-container {
-  height: 70vh;
+  height: 700px;
   margin: 30px 0;
-  background: url("../images/banner5.jpg");
+  background: url("../images/home2.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -81,6 +81,8 @@
   text-decoration: none;
   font-family: Futura;
   font-size: 30px; }
+  .nav-logo-container h6 > a h6 {
+    margin: 0; }
 
 .button_container {
   position: absolute;
@@ -428,7 +430,7 @@ html[xmlns] .flexslider .slides {
   -moz-user-select: none; }
 
 #slider img {
-  height: 500px; }
+  height: auto; }
 
 #carousel img {
   height: 100px; }
@@ -623,11 +625,15 @@ div#carousel.flexslider {
 
 @media screen and (max-width: 650px) {
   .photo-contact {
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 30px; }
   .carte-contact {
-    height: 300px; }
+    height: 300px;
+    margin-top: 20px; }
   .contact-info {
-    padding: 60px; } }
+    padding: 60px; }
+  .contact-container {
+    min-height: auto; } }
 
 .navigation {
   margin: 20px 0; }
