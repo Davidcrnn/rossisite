@@ -40,13 +40,19 @@
 @media screen and (max-width: 650px) {
     .photo-contact {
         height: 300px;
+        margin-bottom: 30px;
     }
 
     .carte-contact {
         height: 300px;
+        margin-top: 20px;
     }
 
     .contact-info {
         padding: 60px;
+    }
+
+    .contact-container {
+        min-height: auto;
     }
 }
