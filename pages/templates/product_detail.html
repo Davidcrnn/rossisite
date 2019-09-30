@@ -10,16 +10,24 @@
             <div class="col-xs-12 col-md-7">
                     <div id="slider" class="flexslider">
                             <ul class="slides slides-container">
-                              <li><img src="{{ product.image.url }}" alt="" width="100%" height="auto"></li>
-                              <li><img src="{{ product.image3.url }}" alt="" width="100%" height="auto"></li>     
-                              <li><img src="{{ product.image2.url }}" alt="" width="100%" height="auto"></li>
+                              <li><img src="{{ product.image.url }}" alt="" ></li>
+                              {% if product.image3 == True %}
+                              <li><img src="{{ product.image3.url }}" alt=""></li>
+                              {% endif %}
+                              {% if product.image2 == True %}     
+                              <li><img src="{{ product.image2.url }}" alt=""></li>
+                              {% endif %}
                             </ul>
                           </div>
                           <div id="carousel" class="flexslider">
                                 <ul class="slides">
                                   <li><img src="{{ product.image.url }}" alt="" width="100%" height="100px"></li>
-                                  <li><img src="{{ product.image3.url }}" alt="" width="100%" height="100px"></li>     
+                                  {% if product.image3 == True %}
+                                  <li><img src="{{ product.image3.url }}" alt="" width="100%" height="100px"></li>
+                                  {% endif %}     
+                                  {% if product.image2 == True %}    
                                   <li><img src="{{ product.image2.url }}" alt="" width="100%" height="100px"></li>
+                                  {% endif %}
                                 </ul>
                               </div>
             </div>

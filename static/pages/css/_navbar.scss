@@ -9,6 +9,7 @@
     justify-content: space-between;
     padding: 0px 30px;
     height: 70px;
+    box-shadow: 0 2px 2px #4c4b4b26;
     h6 {
         margin-left: 20px;
     }
@@ -177,7 +178,7 @@ $button-width: 35px;
         color: $color-link;
         text-decoration: none;
         overflow: hidden;
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'Futura';
         
         &:hover:after,
@@ -223,19 +224,23 @@ $button-width: 35px;
     .nav-logo-container h6 > a {
       font-size: 24px;
     }
-
-    .card {
-        padding: 0 30px;
+    .nav-logo-container a > img {
+      height: 40px;
+      width: auto;
     }
     .banner-container {
       height: 55vh;
     }
     .button_container {
       right: 40px;
-      top: 20px;
+      top: 14px;
     }
 
     .card-image {
       height: 275px;
+    }
+
+    .product-container {
+      margin: 40px 0;
     }
 }

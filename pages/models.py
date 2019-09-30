@@ -18,8 +18,8 @@ class Product(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name= 'products')
     date_creation = models.DateField(auto_now_add=False, blank=True, null=True)
     image = models.FileField(upload_to='images/')
-    image2 = models.FileField(upload_to='images/')
-    image3 = models.FileField(upload_to='images/')
+    image2 = models.FileField(upload_to='images/', null=True, blank=True)
+    image3 = models.FileField(upload_to='images/', null=True, blank=True)
     visible_home = models.BooleanField(default=True)
 
     def __str__(self):

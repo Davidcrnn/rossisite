@@ -107,6 +107,7 @@
   }
   #slider img {
     height: auto;
+    max-width: 100%;
   }
 
   #carousel img {
@@ -286,7 +287,7 @@
   }
 
   div#carousel.flexslider {
-    background: white
+    background: transparent;
   }
   /* ====================================================================================================================
    * RESPONSIVE
@@ -305,6 +306,7 @@
   @media screen and (max-width: 650px) {
 
     #slider img {
-      height: 350px;
+      height: auto;
+      max-width: 100%;
     }
   }
