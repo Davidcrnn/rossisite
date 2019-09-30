@@ -58,7 +58,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
-  height: 70px; }
+  height: 70px;
+  box-shadow: 0 2px 2px #4c4b4b26; }
   .nav-container h6 {
     margin-left: 20px; }
 
@@ -178,7 +179,7 @@
         color: #FFF;
         text-decoration: none;
         overflow: hidden;
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'Futura'; }
         .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
           width: 100%; }
@@ -209,15 +210,18 @@
     height: 55px; }
   .nav-logo-container h6 > a {
     font-size: 24px; }
-  .card {
-    padding: 0 30px; }
+  .nav-logo-container a > img {
+    height: 40px;
+    width: auto; }
   .banner-container {
     height: 55vh; }
   .button_container {
     right: 40px;
-    top: 20px; }
+    top: 14px; }
   .card-image {
-    height: 275px; } }
+    height: 275px; }
+  .product-container {
+    margin: 40px 0; } }
 
 .footer-nav-link {
   height: 170px;
@@ -302,7 +306,7 @@
     color: #4c4b4bd1; }
 
 .product-container {
-  margin: 50px; }
+  margin: 50px 0px; }
 
 .text-description-product {
   margin: 0; }
@@ -430,7 +434,8 @@ html[xmlns] .flexslider .slides {
   -moz-user-select: none; }
 
 #slider img {
-  height: auto; }
+  height: auto;
+  max-width: 100%; }
 
 #carousel img {
   height: 100px; }
@@ -576,7 +581,7 @@ html[xmlns] .flexslider .slides {
   cursor: default; }
 
 div#carousel.flexslider {
-  background: white; }
+  background: transparent; }
 
 /* ====================================================================================================================
    * RESPONSIVE
@@ -591,7 +596,8 @@ div#carousel.flexslider {
 
 @media screen and (max-width: 650px) {
   #slider img {
-    height: 350px; } }
+    height: auto;
+    max-width: 100%; } }
 
 .photo-contact {
   background: url("../images/contactus.jpg") no-repeat;
