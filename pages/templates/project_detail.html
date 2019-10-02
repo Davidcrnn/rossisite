@@ -1,31 +1,27 @@
-{% extends 'base.html' %}
-
-{% block content%}
+{% extends 'base.html' %} {% block content%}
 
 <div class="container">
-        <div class="header-project-index">
-            <h1> {{ project.name}} - CREATIONS</h1>
-        
-            
-        <div class="row">
-                {% for product in project.get_products %}
-            <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" >
-                    <a href="{% url 'product-detail' product.id %}">
-                <div class="card">
-                    <div class="card-image" style="background-image: url('{{ project.image.url }}');">
-                            
-                        </div>
-                        <div class="card-text">
-                            <p> {{ product.name }}</p>
-                            
-                    </div>
-                </div></a>
+  <div class="header-project-index">
+    <h1>{{ project.name }} - CREATIONS</h1>
+
+    <div class="row">
+      {% for product in project.get_products %}
+      <div class="col-xs-12 col-sm-6 col-md-4 card-project-index">
+        <a href="{% url 'product-detail' product.id %}">
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('{{ project.image.url }}');"
+            ></div>
+            <div class="card-text">
+              <p>{{ product.name }}</p>
             </div>
-            {% endfor %}   
-        </div>
+          </div></a
+        >
+      </div>
+      {% endfor %}
     </div>
-    </div>
-    
+  </div>
+</div>
 
 {% endblock content%}
-

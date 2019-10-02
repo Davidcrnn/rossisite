@@ -1,27 +1,29 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <div class="container">
-    <div class="contact-container">
-        <h1 class="text-center">Contact</h1>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="photo-contact">
-
-                </div>
-                </div>
-                <div class="col-xs-12 col-md-6 carte-contact">
-                    <div class="contact-info">
-                        <h1>Contact</h1>
-                        <p>Victor De Rossi</p>
-                        <p>Atelier - Paris 18ème</p>
-                        <p>+33 (0) 7 82 71 18 77</p>
-                        <p>Email:  <a href="mailto:victorderossi21@gmail.com"> Victorderossi21@gmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-       
+  <div class="navigation">
+    <a href="{% url 'home' %}">ACCUEIL</a> / CONTACT
+  </div>
+  <div class="contact-container">
+    <h1 class="text-center">Contact</h1>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="photo-contact"></div>
+      </div>
+      <div class="col-xs-12 col-md-6 carte-contact"  >
+        <div class="contact-info" >
+          <h1>Contact</h1>
+          <p>Victor De Rossi</p>
+          <p>Atelier - Paris 18ème</p>
+          <p>+33 (0) 7 82 71 18 77</p>
+          <p>
+            Email:
+            <a href="mailto:victorderossi21@gmail.com">
+              Victorderossi21@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
-
+  </div>
 </div>
 {% endblock content %}

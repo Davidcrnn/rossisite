@@ -1,30 +1,33 @@
-{% extends 'base.html'%}
-
-{% block content %}
+{% extends 'base.html'%} {% block content %}
 <div class="container">
-    <div class="navigation">
-        <a href="{% url 'home' %}">ACCUEIL</a> / CREATIONS
-    </div>
-        <div class="header-project-index">
-            <h1>CREATIONS</h1>
-        
-            
-        <div class="row">
-                {% for product in object_list %}
-            <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" >
-                    <a href="{% url 'product-detail' product.id %}">
-                <div class="card">
-                    <div class="card-image" style="background-image: url('{{ product.image.url }}');">
-                            
-                        </div>
-                        <div class="card-text">
-                            <p> {{ product.name.upper }}</p>
-                            
-                    </div>
-                </div></a>
+  <div class="navigation">
+    <a href="{% url 'home' %}">ACCUEIL</a> / CREATIONS
+  </div>
+  <div class="header-project-index">
+    <h1>CREATIONS</h1>
+    
+    <div class="row">
+      {% for product in object_list %}
+      <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" data-aos="fade-up"
+      data-aos-offset="0"
+  data-aos-delay="5000"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+  data-aos-once="true">
+        <a href="{% url 'product-detail' product.id %}">
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('{{ product.image.url }}');"
+            ></div>
+            <div class="card-text">
+              <p>{{ product.name.upper }}</p>
             </div>
-            {% endfor %}   
-        </div>
+          </div></a
+        >
+      </div>
+      {% endfor %}
     </div>
-    </div>
+  </div>
+</div>
 {% endblock content%}

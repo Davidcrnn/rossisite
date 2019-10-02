@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.views.generic.detail import DetailView
 from .views import ProjectListView, ProjectDetailView, ProductListView, ProductDetailView, HomePageView, ContactView
 
+
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
     path("about/", TemplateView.as_view(template_name= "about.html"), name="about"),
@@ -16,6 +17,10 @@ urlpatterns = [
     path('contact/', ContactView.as_view(), name='contact'),
 
 ]
+
+
+
+
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -22,5 +22,3 @@ urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('', include('pages.urls')),
 ]
-
-

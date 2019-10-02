@@ -1,30 +1,26 @@
-{% extends 'base.html' %}
-
-{% block content%}
+{% extends 'base.html' %} {% block content%}
 <div class="container">
-    <div class="navigation">
-            <a href="{% url 'home' %}">ACCUEIL</a> / SERIES
-    </div>
-    <div class="header-project-index">
-        
-        <h1>SERIES</h1>
-        
+  <div class="navigation"><a href="{% url 'home' %}">ACCUEIL</a> / SERIES</div>
+  <div class="header-project-index">
+    <h1>SERIES</h1>
+
     <div class="row">
-            {% for project in object_list %}
-        <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" >
-                <a href="{% url 'project-detail' project.id %}">
-            <div class="card">
-                <div class="card-image" style="background-image: url('{{ project.image.url }}');">
-                        
-                    </div>
-                    <div class="card-text">
-                        <p> {{ project.name.upper }}</p>
-                        
-                </div>
-            </div></a>
-        </div>
-        {% endfor %}   
+      {% for project in object_list %}
+      <div class="col-xs-12 col-sm-6 col-md-4 card-project-index">
+        <a href="{% url 'project-detail' project.id %}">
+          <div class="card">
+            <div
+              class="card-image"
+              style="background-image: url('{{ project.image.url }}');"
+            ></div>
+            <div class="card-text">
+              <p>{{ project.name.upper }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
     </div>
-</div>
+  </div>
 </div>
 {% endblock content%}
