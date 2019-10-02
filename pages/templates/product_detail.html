@@ -1,56 +1,65 @@
-{% extends 'base.html' %}
-{% load static%}
-{% block content%}
+{% extends 'base.html' %} {% load static%} {% block content%}
 <div class="container">
-    <div class="product-container">
-      <div class="navigation">
-        <a href="{% url 'home' %}">HOME</a> / {{ product.name.upper}}
-      </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-7">
-                    <div id="slider" class="flexslider">
-                            <ul class="slides slides-container">
-                              <li><img src="{{ product.image.url }}" alt="" ></li>
-                              {% if product.image3 == True %}
-                              <li><img src="{{ product.image3.url }}" alt=""></li>
-                              {% endif %}
-                              {% if product.image2 == True %}     
-                              <li><img src="{{ product.image2.url }}" alt=""></li>
-                              {% endif %}
-                            </ul>
-                          </div>
-                          <div id="carousel" class="flexslider">
-                                <ul class="slides">
-                                  <li><img src="{{ product.image.url }}" alt="" width="100%" height="100px"></li>
-                                  {% if product.image3 == True %}
-                                  <li><img src="{{ product.image3.url }}" alt="" width="100%" height="100px"></li>
-                                  {% endif %}     
-                                  {% if product.image2 == True %}    
-                                  <li><img src="{{ product.image2.url }}" alt="" width="100%" height="100px"></li>
-                                  {% endif %}
-                                </ul>
-                              </div>
-            </div>
-            <div class="col-xs-12 col-md-5">
-              <div class="text-description-product">
-                <h1>{{ product.name}}</h1>
-                
-                <p> {{ product.description|safe}}</p>
-                <br>
-
-
-                
-                    <a href="mailto:david.crenin@gmail.com" class="btn center">Contact</a>
-
-              </div>
-                 
-                 
-            </div>
-        </div>
-
+  <div class="product-container">
+    <div class="navigation">
+      <a href="{% url 'home' %}">HOME</a> / {{ product.name.upper }}
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-7">
+        <div id="slider" class="flexslider">
+          <ul class="slides slides-container">
+            <li><img src="{{ product.image.url }}" alt="" /></li>
+            {% if product.image3 == True %}
+            <li><img src="{{ product.image3.url }}" alt="" /></li>
+            {% endif %} {% if product.image2 == True %}
+            <li><img src="{{ product.image2.url }}" alt="" /></li>
+            {% endif %}
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img
+                src="{{ product.image.url }}"
+                alt=""
+                width="100%"
+                height="100px"
+              />
+            </li>
+            {% if product.image3 == True %}
+            <li>
+              <img
+                src="{{ product.image3.url }}"
+                alt=""
+                width="100%"
+                height="100px"
+              />
+            </li>
+            {% endif %} {% if product.image2 == True %}
+            <li>
+              <img
+                src="{{ product.image2.url }}"
+                alt=""
+                width="100%"
+                height="100px"
+              />
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <div class="text-description-product">
+          <h1>{{ product.name }}</h1>
 
+          <p>{{ product.description | linebreaksbr }}</p>
+          <br />
+
+          <a href="mailto:david.crenin@gmail.com" class="btn center">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock content%}
-

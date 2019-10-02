@@ -41,6 +41,34 @@
   font-family: Futura;
   font-size: 16px; }
 
+#myBtn {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 20px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #e9e9eb;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 3px; }
+  #myBtn img {
+    height: 30px;
+    width: 30px;
+    background-color: none; }
+
+#myBtn:hover {
+  opacity: 0.7; }
+
 @media screen and (max-width: 650px) {
   .header-text {
     background-image: url("../images/banner-decouvrir-min.svg");
@@ -270,7 +298,8 @@
   background-size: cover;
   background-position: center;
   border: none;
-  border-radius: 4px; }
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px #80808063; }
 
 .card-text p {
   margin-top: 20px; }
