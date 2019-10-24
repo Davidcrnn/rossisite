@@ -8,12 +8,7 @@
     
     <div class="row">
       {% for product in object_list %}
-      <div class="col-xs-12 col-sm-6 col-md-4 card-project-index" data-aos="fade-up"
-      data-aos-offset="0"
-  data-aos-delay="5000"
-  data-aos-duration="1000"
-  data-aos-easing="ease-in-out"
-  data-aos-once="true">
+      <div class="col-xs-12 col-sm-6 col-md-4 card-project-index">
         <a href="{% url 'product-detail' product.id %}">
           <div class="card">
             <div

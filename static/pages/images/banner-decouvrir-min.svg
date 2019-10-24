@@ -2,11 +2,10 @@
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 871 88.5" style="enable-background:new 0 0 871 88.5;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#050505;}
-</style>
 <g>
-	<polygon class="st0" points="871,95 0,95 0,70 232.1,70 871,70 	"/>
+	<g>
+		<polygon points="871,95 0,95 0,70 232.1,70 871,70 		"/>
+	</g>
+	<polyline points="314.5,9.2 565.7,9.2 608.1,75.2 264.8,74.8 	"/>
 </g>
-<polyline class="st0" points="300.5,11.2 551.7,11.2 594.1,77.2 250.8,76.8 "/>
 </svg>
