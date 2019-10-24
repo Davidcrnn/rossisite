@@ -106,12 +106,14 @@
     -moz-user-select: none;
   }
   #slider img {
-    height: auto;
+    height: 800px;
     max-width: 100%;
+    object-fit: cover
   }
 
   #carousel img {
-    height: 100px
+    height: 100px;
+    object-fit: cover;
   }
   .flex-viewport {
     max-height: 2000px;
