@@ -1,7 +1,8 @@
 {% load static %}
 <div class="nav-container">
   <div class="nav-logo-container">
-    <a href="{% url 'home' %}" class=""><img src="{% static 'pages/images/vdr-logo.svg'%}" alt="" width="100px" height="50px"></a>
+    <a href="{% url 'home' %}" class=""><img src="{% static 'pages/images/vdr-logo.svg'%}" alt="" width="100px"
+        height="50px"></a>
   </div>
 
   <div class="nav-link-container">
@@ -19,31 +20,34 @@
 
 
 <div class="overlay" id="overlay">
-    <nav class="overlay-menu">
-        <ul>
-            <li>
-                <a href="{% url 'home' %}">ACCUEIL</a>
-              </li>
-            <li>
-                <a href="{% url 'projects' %}">SERIES</a>
-              </li>
-              <li class="">
-                <a href="{% url 'products' %}">CREATIONS
-                </a>
-              </li>
-              <li class="">
-                <a href="{% url 'about' %}">BIOGRAPHIE</a>
-              </li>
-              <li class="">
-                  <a href="{% url 'contact' %}">CONTACT</a>
-                </li>
-        </ul>
-    </nav>
+  <nav class="overlay-menu">
+    <ul>
+      <li>
+        <a href="{% url 'home' %}">ACCUEIL</a>
+      </li>
+      <li>
+        <a href="{% url 'projects' %}">SERIES</a>
+      </li>
+      <li class="">
+        <a href="{% url 'products' %}">CREATIONS
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/victorderossi_atelier/" target="_blank">INSTAGRAM</a>
+      </li>
+      <li class="">
+        <a href="{% url 'about' %}">BIOGRAPHIE</a>
+      </li>
+      <li class="">
+        <a href="{% url 'contact' %}">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <script>
-$('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
+  $('#toggle').click(function () {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
   });
 </script>

@@ -197,7 +197,7 @@
     .overlay ul li {
       display: block;
       height: 25%;
-      height: calc(100% / 4);
+      height: calc(100% / 6);
       min-height: 50px;
       position: relative;
       opacity: 0; }
@@ -345,6 +345,10 @@
     margin: 0; }
   .text-description-product p {
     font-size: 16px; }
+
+a.insta-btn {
+  color: #000000de;
+  font-family: FuturaMedium; }
 
 .btn {
   position: relative;
@@ -629,7 +633,7 @@ div#carousel.flexslider {
 
 @media screen and (max-width: 650px) {
   #slider img {
-    height: auto;
+    height: 450px;
     max-width: 100%; } }
 
 .photo-contact {

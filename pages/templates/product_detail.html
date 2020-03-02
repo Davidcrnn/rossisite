@@ -8,10 +8,10 @@
       <div class="col-xs-12 col-md-7">
         <div id="slider" class="flexslider">
           <ul class="slides slides-container">
-            <li><img src="{{ product.image.url }}" alt="" class="img-fluid" /></li>
+            <li><img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid" /></li>
             {% if product.image2 %}
             <li><img src="{{ product.image2.url }}" alt="" class="img-fluid" /></li>
-            
+
             {% endif %} {% if product.image3 %}
             <li><img src="{{ product.image3.url }}" alt="" class="img-fluid" /></li>
             {% endif %}
@@ -20,32 +20,17 @@
         <div id="carousel" class="flexslider">
           <ul class="slides">
             <li>
-              <img
-                src="{{ product.image.url }}"
-                alt="" class="img-fluid"
-                width="100%"
-                height="100px"
-              />
+              <img src="{{ product.image.url }}" alt="" class="img-fluid" width="100%" height="100px" />
             </li>
             {% if product.image2 %}
             <li>
-              <img
-                src="{{ product.image2.url }}"
-                alt="" class="img-fluid"
-                width="100%"
-                height="100px"
-              />
+              <img src="{{ product.image2.url }}" alt="" class="img-fluid" width="100%" height="100px" />
             </li>
             {%else%}
             <li></li>
             {% endif %} {% if product.image3 %}
             <li>
-              <img
-                src="{{ product.image3.url }}"
-                alt="" class="img-fluid"
-                width="100%"
-                height="100px"
-              />
+              <img src="{{ product.image3.url }}" alt="" class="img-fluid" width="100%" height="100px" />
             </li>
             {% endif %}
           </ul>
@@ -58,7 +43,12 @@
           <p>{{ product.description | linebreaksbr }}</p>
           <br />
 
-          <a href="mailto:david.crenin@gmail.com" class="btn center">Contact</a>
+          <a href="mailto:victorderossi21@gmail.com" class="btn center">Contact</a>
+          <br>
+          <a href="https://www.instagram.com/victorderossi_atelier/" class="insta-btn"><img
+              src="{% static '../static/pages/images/insta.svg' %}" alt="Instagram" style="height:40px;     padding-bottom: 6px;
+              padding-right: 20px;">SUIVEZ MOI SUR
+            INSTAGRAM</a>
         </div>
       </div>
     </div>

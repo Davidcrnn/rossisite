@@ -1,77 +1,45 @@
 <!DOCTYPE html>
 
 <html>
-  {% load staticfiles %} {% load sass_tags %}
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Victor de Rossi</title>
-    <meta name="description" content="Victor de Rossi - Mobilier d'art" />
-    <meta
-      name="keywords"
-      content="Mobilier,Art,Paris,artiste,meuble,rossi,victor,oeuvre"
-    />
+{% load staticfiles %} {% load sass_tags %}
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="{% sass_src 'pages/css/style.scss' %}"
-      type="text/css"
-      media="screen"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="{% static 'pages/images/vdr-favicon.ico' %}"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Victor de Rossi</title>
+  <meta name="description" content="Victor de Rossi - Mobilier d'art" />
+  <meta name="keywords" content="Mobilier,Art,Paris,artiste,meuble,rossi,victor,oeuvre" />
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% sass_src 'pages/css/style.scss' %}" type="text/css" media="screen" />
+  <link rel="shortcut icon" type="image/png" href="{% static 'pages/images/vdr-favicon.ico' %}" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <button onclick="topFunction()" class="scrollToTop" id="myBtn" title="Go to top"><img
+      src="{% static 'pages/images/vdr-logo.svg' %}" alt=""></button>
+  {% include 'navbar.html'%} {% block content %} {% endblock content%}
+  {% include 'footer.html'%}
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'pages/js/app.js' %}"></script>
+  <script type="text/javascript" src="{% static 'pages/js/flexslider.js' %}"></script>
+  <script type="text/javascript" src="{% static 'pages/js/slider.js' %}"></script>
+  <script type="text/javascript" src="{% static 'pages/js/scroll_btn.js' %}">
+  </script>
+</body>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
-  <body>
-      <button onclick="topFunction()" class="scrollToTop" id="myBtn" title="Go to top"><img src="{% static 'pages/images/vdr-logo.svg' %}" alt=""></button>
-    {% include 'navbar.html'%} {% block content %} {% endblock content%} 
-    {% include 'footer.html'%}
-
-  
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'pages/js/app.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'pages/js/flexslider.js' %}"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{% static 'pages/js/slider.js' %}"
-    ></script>
-  <script
-      type="text/javascript"
-      src="{% static 'pages/js/scroll_btn.js' %}">
-</script>
-  </body>
 </html>
